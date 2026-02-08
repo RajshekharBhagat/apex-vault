@@ -165,10 +165,19 @@
 [data-rehype-pretty-code-figure] pre {
   overflow-x: auto;
   border-radius: 0.5rem;
-  border: 1px solid oklch(1 0 0 / 10%);
-  padding: 1rem;
-  font-size: 0.875rem;
-  line-height: 1.7;
+  border: 1px solid oklch(0.488 0.243 264.376 / 20%);
+  padding: 0.75rem 0;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  background: oklch(0.16 0.01 265) !important;
+}
+
+@media (min-width: 640px) {
+  [data-rehype-pretty-code-figure] pre {
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
 }
 
 [data-rehype-pretty-code-figure] code {
@@ -177,8 +186,14 @@
 }
 
 [data-rehype-pretty-code-figure] [data-line] {
-  padding: 0 1rem;
+  padding: 0 0.75rem;
   border-left: 2px solid transparent;
+}
+
+@media (min-width: 640px) {
+  [data-rehype-pretty-code-figure] [data-line] {
+    padding: 0 1rem;
+  }
 }
 
 [data-rehype-pretty-code-figure] [data-highlighted-line] {

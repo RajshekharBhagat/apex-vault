@@ -40,17 +40,6 @@ export default async function PracticalPage({ params }: Props) {
 
   return (
     <div className="mx-auto max-w-7xl w-full px-4 py-12">
-      {/* Back Link */}
-      <div className="mb-8">
-        <Link
-          href={`/practicals/${subject}`}
-          className="inline-flex items-center gap-1.5 text-sm text-zinc-500 hover:text-blue-400 transition-colors"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Practicals
-        </Link>
-      </div>
-
       {/* Breadcrumb */}
       <nav className="mb-6 flex items-center gap-1.5 text-sm text-zinc-600">
         <Link href="/practicals" className="hover:text-blue-400 transition-colors">

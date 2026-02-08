@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { CopyCodeWrapper } from "./CopyCodeButton";
 
 interface MarkdownRendererProps {
   html: string;
@@ -6,10 +6,5 @@ interface MarkdownRendererProps {
 }
 
 export function MarkdownRenderer({ html, className }: MarkdownRendererProps) {
-  return (
-    <article
-      className={cn("prose prose-invert max-w-none", className)}
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
-  );
+  return <CopyCodeWrapper html={html} className={className} />;
 }

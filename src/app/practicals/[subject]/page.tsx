@@ -40,16 +40,6 @@ export default async function SubjectPage({ params }: Props) {
 
   return (
     <div className="mx-auto max-w-7xl w-full px-4 py-12">
-      <div className="mb-8">
-        <Link
-          href="/practicals"
-          className="inline-flex items-center gap-1.5 text-sm text-zinc-500 hover:text-blue-400 transition-colors"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Subjects
-        </Link>
-      </div>
-
       <div className="mb-10">
         <Heading text={subjectName} className="text-4xl font-bold text-left" />
         <p className="mt-2 text-zinc-400">

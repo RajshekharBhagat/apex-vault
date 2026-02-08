@@ -10,7 +10,7 @@ const CONTENT_DIR = path.join(process.cwd(), 'content','practicals')
 const SUBJECT_NAMES: Record<string, string> = {
     'block-chain': 'Block Chain',
     'deep-learning': 'Deep Learning',
-    'machine-learning': 'Machine Learning',
+    'natural-language-processing': 'Natural Language Processing',
 }
 
 export function getSubjects(): SubjectInfo[] {
