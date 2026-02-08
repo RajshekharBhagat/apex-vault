@@ -138,10 +138,27 @@
   --tw-prose-pre-bg: transparent;
 }
 
+.prose h1 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+
 .prose h2 {
+  font-size: 1.25rem;
   border-bottom: 1px solid oklch(1 0 0 / 10%);
   padding-bottom: 0.5rem;
   margin-top: 2rem;
+}
+
+.prose h3 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .prose h1 { font-size: 2rem; }
+  .prose h2 { font-size: 1.5rem; }
+  .prose h3 { font-size: 1.25rem; }
 }
 
 /* === rehype-pretty-code Styles === */
@@ -173,7 +190,7 @@
 .prose :not(pre) > code {
   background: oklch(1 0 0 / 8%);
   border: 1px solid oklch(1 0 0 / 10%);
-  border-radius: 0.25rem;
+  border-radius: 0rem;
   padding: 0.15rem 0.4rem;
   font-size: 0.85em;
 }

@@ -72,7 +72,7 @@ export default async function PracticalPage({ params }: Props) {
         <span className="inline-block rounded-md bg-blue-500/10 border border-blue-500/20 px-3 py-1 text-sm font-bold text-blue-400">
           Practical {String(practical.practical).padStart(2, "0")}
         </span>
-        <h1 className="mt-4 text-3xl font-bold text-zinc-50">
+        <h1 className="mt-4 text-xl md:text-3xl font-bold text-zinc-50">
           {practical.title}
         </h1>
         <p className="mt-2 text-lg text-zinc-400">
