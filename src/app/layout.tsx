@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SessionProvider from "@/components/providers/SessionProvider";
+import RouteLoader from "@/components/providers/RouteLoader";
 
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body
         className={`antialiased min-h-screen flex flex-col bg-black text-white`}
       >
+        <RouteLoader />
         <main className="flex-1 flex flex-col">
           <SessionProvider>{children}</SessionProvider>
         </main>

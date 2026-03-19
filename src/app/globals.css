@@ -225,3 +225,22 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+@keyframes route-loader-slide {
+  0% {
+    transform: translateX(-110%);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(420%);
+    opacity: 0.7;
+  }
+}
+
+.route-loader-bar {
+  animation: route-loader-slide 1s ease-in-out infinite;
+  will-change: transform;
+}
